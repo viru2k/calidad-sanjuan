@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "http://agenciacalidadsanjuan.com.ar/api-calidad-sanjuan/public/api/",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

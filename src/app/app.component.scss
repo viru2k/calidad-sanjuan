@@ -1,0 +1,134 @@
+@color: #c0c0c0;
+@background: #fbfbfb;
+@gutter: 10px;
+@border-size: 1px;
+
+
+
+.layers {
+	position: relative;
+	top: 0;
+	max-width: 960px;
+	min-width: 320px;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid {
+	display: flex;	
+}
+
+.grid__column {
+	flex-grow: 1;
+	flex-shrink: 1;
+	
+
+}
+
+.row {
+	display: flex;
+}
+
+.row__item {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0;
+	
+
+	padding: 10px 0;
+	text-align: center;
+
+
+	background: #9D1029;
+	
+	&--double {
+		flex-grow: 2;
+		flex-shrink: 2;
+
+	}
+}
+
+/****************************************** REDES SOCIALES *********************************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+$timing        : 265ms;
+$iconColor     : #ffffff;
+$accent        : #ffffff;
+$bluefade      : #d85b02;
+$gradient      : #020202;
+
+@mixin transformScale($size: 1) {
+    transform: scale($size);
+    -ms-transform: scale($size);
+    -webkit-transform: scale($size);
+}
+
+body {
+    background-color: rgba($iconColor, 0.05);
+}
+
+.social-container {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 0.75em;
+  
+    li {
+        display: inline-block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+
+    }
+
+    i {
+        color: rgb(157, 24, 42);
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all $timing ease-out;
+    }
+
+    a {
+        display: inline-block;
+      
+        &:before {
+            @include transformScale();
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, $iconColor, $accent);
+            transition: all $timing ease-out;
+        }
+        
+        &:hover:before {
+            transform: scale(0);
+            transition: all $timing ease-in;
+        }
+        
+        &:hover i {
+            @include transformScale(2.2);
+            color: $iconColor;
+            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all $timing ease-in;
+        }
+    }
+  
+}

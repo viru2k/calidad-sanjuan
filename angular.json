@@ -23,9 +23,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              
+              "node_modules/animate.css/animate.css",
+              "node_modules/hover.css/css/hover-min.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/fullcalendar/dist/fullcalendar.min.css",
+              {
+                "input": "./node_modules/bootstrap/dist/css/bootstrap.css"
+              },
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jspdf/dist/jspdf.min.js",
+              "./node_modules/jspdf-autotable/dist/jspdf.plugin.autotable.js",
+              "./node_modules/popper.js/dist/esm/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -131,5 +147,10 @@
       }
     }
   },
-  "defaultProject": "calidad-sanjuan"
+  "defaultProject": "calidad-sanjuan",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }

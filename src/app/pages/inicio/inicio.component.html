@@ -1,0 +1,85 @@
+
+<div class="background-slide-1 pb-5 cuadro-size animated fadeIn ">
+    <div class="mt-5"></div>
+  <div class=" row ">
+    
+    	<div class=" col-md-2 col-sm-0 ol-xs-0"></div>
+			<div class=" col-md-8 col-sm-12 col-xs-12 mb-5 mt-5 transparency-banner col-sm-m-1 col-xs-m-1 ">
+          <div class="row pt-5">
+            	<div class="col-md-1 col-sm-0 ol-xs-0"></div>
+              <div class="col-md-10 col-sm-12 col-xs-12 m-2">
+                  <b><h1 class="txt-noticia-inicio">Impulsando el desarrollo</h1></b>
+                  <b><h3 class="txt-noticia-inicio pb-5">Alentamos el desarrollo técnico y económico de los factores de la producción.</h3></b>
+                  <br>
+              </div>
+              <div class="col-md-1 col-sm-0 ol-xs-0"></div>
+        </div>
+        <div class=" col-md-2 col-sm-0 ol-xs-0"></div>
+</div>
+</div>
+
+<div class="background-noticias transparency-2 cuadro-size pt-5 ">
+  <div class="mt-4"><h1><p class="text-center txt-noticia-inicio">NOTICIAS</p></h1></div>
+  <app-loading *ngIf="loading" class="text-center txt-noticia-inicio"></app-loading>
+
+  <p-scrollPanel  [style]="{width: '99%', height: '500px'}">
+    
+
+  <div  *ngFor="let elemento of elementos" class=" row ">
+    
+      <div class=" col-xs-0 col-sm-0 col-md-3"></div>
+     
+			<div class="  xs-12 col-sm-12 col-md-6 mt-4 m-1 border-wrapper">
+        <div class="row  my-hover" (click)="verDetalle(elemento)">
+          <div class="col-md-8 xs-12 col-sm-12">
+              <h5 class="txt-noticia-inicio ">{{elemento.noticia_titulo}}</h5>
+              <hr>
+            
+              <h6 class="txt-noticia-inicio"><p class="text-justify">{{elemento.noticia_descripcion}}</p></h6>
+
+          </div>
+          
+          <div class="col-md-4 xs-12 col-sm-12">
+              <img src="{{elemento.noticia_imagen}}" alt="Smiley face" class="rounded imagen-fit">
+          </div>
+        </div>
+        
+      </div>
+			<div class="col-2 xs-0 col-sm-0  col-md-3"></div>
+
+</div>
+
+</p-scrollPanel>
+</div>
+
+
+<div class="background-videos  cuadro-size  pt-5">
+  
+    <div class="  "><h1><p class="text-center txt-noticia-inicio">VIDEOS</p></h1></div>
+    <p-scrollPanel [style]="{width: '99%', height: '500px'}">
+
+    <div *ngFor="let elemento of elementos_videos" >
+        <div class=" row m-1 ">
+            <div class=" col-md-12 col-sm-12 col-xs-12 mt-2  col-lg-ml-2 col-xl-mr-2 col-xs-ml-0 col-xs-mr-0 col-sm-ml-0 col-sm-mr-0 text-center">
+                <b> <h5 class="txt-noticia-inicio ">{{elemento.video_titulo | uppercase }}</h5></b>
+            </div>
+        </div>
+      <div class=" row m-1 ">
+        <div class=" col-md-3 col-sm-0 col-xs-0"></div>
+      
+            
+        </div>
+        <div class=" col-md-6 col-sm-12 col-xs-12 mt-2  col-lg-ml-2 col-xl-mr-2 col-xs-ml-0 col-xs-mr-0 col-sm-ml-0 col-sm-mr-0     border-wrapper2">
+          
+         
+                <iframe [src]="photoURL(elemento.video_url)" class="cuadro-size-videos rounded"  frameborder="0" allowfullscreen></iframe>
+          
+          
+        </div>
+        <div class=" col-md-3 col-sm-0 col-xs-0"></div>
+      </div>
+  
+</p-scrollPanel>
+
+
+  </div>  
