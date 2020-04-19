@@ -1,0 +1,1039 @@
+//@import "~bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Open+Sans|Oxygen&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap');
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+
+
+@media screen and (max-width: 380px){
+        .header-inicio {
+            background: url(./assets/img/abstract.jpg) no-repeat center;
+            background-size: cover;
+            max-width: 100%;
+           max-height: 100%;
+           // min-height: 60vh;
+           
+          }
+          .label-header-placement{
+              margin-top: 120px;
+              font-size: 20px;
+          }
+        
+    }
+    
+    
+    @media screen and (min-width: 381px){
+        .header-inicio {
+            background: url(./assets/img/abstract.jpg) no-repeat center;
+            background-size: cover;
+          //  max-width: 100%;
+            //max-height: 100%;
+            min-height: 60vh;
+           
+          }
+        
+    }
+
+
+    
+@media screen and (max-width: 380px){
+        .header-inicio-2 {
+            background: url(./assets/img/abstract-2.jpg) no-repeat center;
+            background-size: cover;
+            max-width: 100%;
+           max-height: 100%;
+           // min-height: 60vh;
+           
+          }
+          .label-header-placement{
+              margin-top: 120px;
+              font-size: 20px;
+          }
+        
+    }
+    
+    
+    @media screen and (min-width: 381px){
+        .header-inicio {
+            background: url(./assets/img/abstract-2.jpg) no-repeat center;
+            background-size: cover;
+          //  max-width: 100%;
+            //max-height: 100%;
+            min-height: 60vh;
+           
+          }
+        
+    }
+
+
+
+        
+@media screen and (max-width: 380px){
+        .background-quienes-somos {
+            background: url(./assets/img/foto_quinessomos.png) no-repeat ;
+          //  background-size: cover;
+            max-width: 100%;
+        //   max-height: 100%;
+           // min-height: 60vh;
+           
+          }
+          .label-header-placement{
+              margin-top: 120px;
+              font-size: 20px;
+          }
+        
+    }
+    
+    
+    @media screen and (min-width: 381px){
+        .background-quienes-somos {
+            background: url(./assets/img/foto_quinessomos.png) no-repeat ;
+        //    background-size: cover;
+          //  max-width: 100%;
+            //max-height: 100%;
+            min-height: 60vh;
+           
+          }
+        
+    }
+    
+
+    
+
+.h6 .h5 .h4 .h3 .h2 .h1{
+    font-family: 'Montserrat', sans-serif !important ;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif !important ;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif !important ;
+}
+
+
+.font-size-h6{
+    font-size: 17px;
+}
+
+
+.font-size-h5{
+    font-size: 16px;
+}
+
+
+
+.texto-encabezado{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.texto-oxygen{
+  font-family: 'Oxygen', sans-serif;
+}
+
+.texto-oepn-sans
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.texto-josefina
+{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.texto-roboto
+{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.texto-monserrat
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.texto-monserrat-alternat
+{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.source-sans-pro{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+%font-oxigen{
+    font-family: 'Oxygen', sans-serif;
+}
+
+%font-open-sans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+%font-luijian{
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+
+
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*************************LABEL**************************/
+
+
+.align-center-label{
+	position:sticky;
+	width:350px;
+	left: 50px;
+	top:150px;
+    color:#21618C;
+	//text-align:center;
+  
+  z-index:100;
+}
+
+.label-encabezado{
+        font-family: 'Montserrat Alternates', sans-serif !important;
+        font-size: 30px;
+    }
+
+    .label-pie-encabezado{
+        //font-family: 'Montserrat', sans-serif !important ;
+        font-family: 'Montserrat Alternates', sans-serif !important;
+        font-size: 20px;
+    }
+
+
+
+.label-title-big{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 35px;
+}
+.label-h7{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 14px;
+}
+
+.label-h6{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 16px;
+}
+
+.label-h5{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 18px;
+}
+
+.label-h4{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 20px;
+}
+
+.label-h3{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 22px;
+}
+
+.label-h2{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 24px;
+}
+
+.label-h1{
+    font-family: 'Montserrat', sans-serif !important ;
+    font-size: 26px;
+}
+
+
+/**************************** NAV BAR ************************************/
+
+.ui-calendar {
+    display: block;
+}
+
+
+.main-div{
+    height: 92vh;
+}
+
+.popup-div-width{
+    width: 90vw;
+}
+/* 
+.navbar{
+    background: rgba(133, 193, 233,0.9) !important;
+    //background-color: transparent !important;
+    border-width: 0;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.navbar-round{
+ border-radius: 16px;
+}
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-button{
+    color:#424242!important;
+}
+
+.navbar-font{
+    color: #424242;
+    font-size: 16px;
+}
+
+.navbar-font-mobile{
+    color: rgb(240, 243, 244)!important;
+    font-size: 16px;
+}
+
+.navbar-background-mobile{
+    background: rgba(46, 134, 193,1) !important;
+    width: 100%;
+    border-radius: 6px;
+}
+ */
+
+ .navbar{
+        background: rgba(236, 239, 241,0.5) !important;
+      //  background-color: transparent !important;
+        border-width: 0;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+    
+    .navbar-round{
+     border-radius: 16px;
+     
+    }
+    .navbar.navbar-default .navbar-collapse {
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .navbar-button{
+        color:#424242!important;
+        
+    }
+    
+    .navbar-font{
+        color: #160101;
+        font-size: 16px;
+      
+    }
+    
+    .navbar-font-mobile{
+        color: #424242!important;
+        font-size: 16px;
+        padding: 10px !important;
+
+    }
+
+    .navbar-font-mobile-warning{
+        color: #C2185B!important;
+        font-size: 16px;
+        padding: 10px !important;
+
+    }
+    
+    .navbar-font-green{
+        color: #239B56;
+        font-size: 16px;
+    }
+    
+    .navbar-font-blue{
+        color: #2874A6;
+        font-size: 16px;
+    }
+    
+    .navbar-background-mobile{
+        background: rgba(236, 239, 241,0.5) !important;
+      
+    }
+
+
+.navbar-img { 
+    height: 50%;
+    object-fit: contain; 
+} 
+
+
+.navbar{
+        background: rgba(236, 239, 241,0.5) !important;
+      //  background-color: transparent !important;
+        border-width: 0;
+        -webkit-box-shadow: none!important;
+        box-shadow: none!important;
+    }
+
+
+
+
+      .container-fluid-nav div{
+        display: flex;
+      justify-content: space-around;}
+
+      .nav {
+        display: flex;
+        justify-content: center;
+      list-style: none;
+      }
+      
+      li {
+        text-align: center;
+      }
+      
+      li:not(:last-child) {
+      margin-right: 1em;
+      }
+
+.fa-navicon {
+  color: #424949;
+}
+
+.footer-white {
+        font-family: 'Bahianita', cursive;
+        background-color: #ffffff !important;
+        border-color: rgb(216, 91, 2);
+      }
+
+.footer-default {
+        background-color: #EBDEF0 !important;
+        border-color: rgb(216, 91, 2);
+      }
+
+#top {
+        
+        background: #F5EEB8;padding: 0 0 0; 
+        color: #000;font-size:13px;
+        height: 50px;
+}
+
+body{
+        font-family: 'Roboto', sans-serif;
+       }  
+
+.fondo-body {
+        background: rgba(255, 239, 153, 0.7);
+    } 
+
+.menu-font{font-size: 15px;
+        }
+
+.sub-menu-top {
+        background: #DCF1F2;padding: 2px 0 0; 
+        color: #000;font-size:13px;
+}
+
+.fondo {
+        background: #DCF1F2;padding: 2px 0 0; 
+        color: #000;font-size:13px;}
+
+ 
+.btn-menu-uno{
+      
+        color: #424949 !important;
+    
+}
+
+.btn-menu-uno .hover{
+      
+  color: #1b1a1a !important;
+
+}
+
+
+
+/**
+*
+*
+COLEGIO DE PSICOLOGOS
+*
+*
+**/
+
+
+
+.txt-negro-colegio{
+        color: #000000 !important; 
+        font-family: 'Open Sans', sans-serif;
+        font-style: bold;
+}
+
+.txt-blanco-colegio{
+        color: #ffffff !important; 
+        font-family: 'Open Sans', sans-serif;
+}
+
+.txt-azul-oscuro-colegio{
+        color: #2E4053 !important; 
+        font-family: 'Open Sans', sans-serif;  
+}
+
+.txt-dropdown{
+        color: rgb(39, 40, 41) !important; 
+        font-family: 'Open Sans', sans-serif;  
+}
+
+.txt-gris-oscuro-colegio{
+        color: #566573 !important; 
+        
+}
+
+.texto-fecha{
+        font-family: 'Oxygen', sans-serif !important;
+        color:#EF5350 !important;
+    }
+
+.texto-copete{
+    font-family: 'Oxygen', sans-serif !important;
+    color:#5C6BC0 !important;
+}
+
+
+.txt-gris-claro-colegio{
+        color: #21618C!important; 
+        font-family: 'Montserrat Alternates', sans-serif; 
+}
+
+.icon-user-colegio{
+        color: #3498DB!important;      
+}
+
+
+
+
+
+/*************************HR **************************/
+.hr-50{
+    
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color:  #8C9EFF;
+        text-align: center;
+        height: 1.5em;
+        opacity: .5;
+        &:before {
+          content: '';
+          // use the linear-gradient for the fading effect
+          // use a solid background color for a solid bar
+          background: linear-gradient(to right, transparent, #8C9EFF, transparent);
+          position: absolute;
+          left: 0;
+        
+          width: 100%;
+          height: 1px;
+        }
+        &:after {
+          content: attr(data-content);
+          position: relative;
+          display: inline-block;
+          color: #8C9EFF;
+      
+          padding: 0 .5em;
+          line-height: 1.5em;
+          // this is really the only tricky part, you need to specify the background color of the container element...
+          color: #8C9EFF;
+          background-color: #fcfcfa;
+        }
+      }
+
+
+      .hr-50-alternat{
+    
+        line-height: 1em;
+        position: relative;
+        outline: 0;
+        border: 0;
+        color:  #239B56;
+        text-align: center;
+        height: 1.5em;
+        opacity: .5;
+        &:before {
+          content: '';
+          // use the linear-gradient for the fading effect
+          // use a solid background color for a solid bar
+          background: linear-gradient(to right, transparent, #239B56, transparent);
+          position: absolute;
+          left: 0;
+        
+          width: 100%;
+          height: 1px;
+        }
+        &:after {
+          content: attr(data-content);
+          position: relative;
+          display: inline-block;
+          color: #239B56;
+      
+          padding: 0 .5em;
+          line-height: 1.5em;
+          // this is really the only tricky part, you need to specify the background color of the container element...
+          color: #239B56;
+          background-color: #fcfcfa;
+        }
+      }
+
+
+/**
+*
+*
+FIN COLEGIO DE PSICOLOGOS
+*
+*
+**/
+
+
+
+.txt-titulo{        
+        color: #424242 !important;             
+}
+
+.txt-noticia-inicio{        
+        color: #ffffff !important;          
+           
+}
+.txt-noticia-inicio{        
+        color: #ffffff !important;             
+}
+
+.txt-menu-inicio{        
+        color: #757575 !important;        
+        
+}
+
+.txt-menu-quienes-somos{        
+        color: #757575 !important;        
+        
+}
+
+.txt-menu-creditos{        
+        color: #757575 !important;            
+}
+
+.txt-menu-capacitaciones{        
+        color: #757575 !important;            
+}
+
+
+.txt-link-capacitaciones{        
+        color: #0288D1 !important;            
+}
+
+.txt-link-leer-mas{        
+        color: #E65100 !important;            
+}
+
+
+.txt-titulo-capacitaciones{        
+        color: #fc760f !important;            
+}
+
+.txt-noticia-popup{
+        color:#424242 !important;
+        
+}
+
+
+
+.btn-menu-tres{
+        background-color: #D1C4E9 !important;
+        color: #e7e7e7 !important;
+        padding-left: -2px;
+        height: 50px;
+}
+
+.btn-menu-cuatro{
+        background-color: #FFAB00 !important;
+        color: #e7e7e7 !important;
+        padding-left: -2px;
+        height: 50px;
+}
+
+.btn-menu-cinco{
+        background-color: #EF9A9A !important;
+        color: #e7e7e7 !important;
+        padding-left: -2px;
+        height: 50px;
+}
+
+
+.icon-home {
+        color: #fff;
+        text-shadow: 1px 1px 1px #ccc;
+        font-size: 1.5em;
+    }
+
+    .flexbox{
+        display: flex;           /* establish flex container */
+        flex-direction: column;  /* make main axis vertical */
+        justify-content: center; /* center items vertically, in this case */
+        align-items: center;     /* center items horizontally, in this case */
+        
+    }
+
+    .flexbox-center{
+        flex-grow: 5;
+        flex-shrink: 5; 
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;        /* for single line flex container */
+        align-content: center; 
+
+    }
+
+    
+    .flexbox-left{
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;        /* for single line flex container */
+        align-content: center; 
+
+    }
+
+    .flex-principal-columnas{
+        flex:5;
+        margin-right: 20px;
+    }
+    
+    .flex-sidebar-columnas{
+        flex:1;
+    }
+    
+    .flex-menubar-columnas{
+        flex:1;
+    }
+    
+    .flexbox-margin-left{
+        margin: 0 auto 0 2  0px;
+    }
+    
+    .flexbox-margin-right{
+        margin: auto 20px 0 auto;
+    }
+    
+    .flexbox-margin-center{
+        margin: 0 auto 0 auto;
+    }
+    
+    .flexbox-padding{
+        padding: 20px;    
+    }
+    
+    .flexbox-max-height{
+        max-height: 30px;
+      overflow: auto;
+    }
+
+
+.color-danger{color: #ff5722;}
+.color-danger{color: #ff5722;}
+.color-danger{color: #ff5722;}
+.color-danger{color: #ff5722;}
+.color-danger{color: #ff5722;}
+.color-danger{color: #ff5722;}       
+
+.h1-color-gris{color: #757575;}
+.h2-color-gris{color: #757575;}
+.h3-color-gris{color: #757575;}
+.h4-color-gris{color: #757575;}
+.h5-color-gris{color: #757575;}
+.h6-color-gris{color: #757575;}
+
+
+.h1-color-danger{color: #ff5722;}
+.h2-color-danger{color: #ff5722;}
+.h3-color-danger{color: #ff5722;}
+.h4-color-danger{color: #ff5722;}
+.h5-color-danger{color: #ff5722;}
+.h6-color-danger{color: #ff5722;}
+
+
+.grid-3-cols{
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(2, 1fr 2fr); */
+       /* grid-template-rows: 200px 100px;
+        grid-auto-rows: 100px; */
+        /* grid-template-columns:  1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns:  1fr 2fr 1fr; 
+        grid-gap: 20px;
+        grid-auto-rows:  minmax(20px, auto) ;
+}
+.grid-header{
+        grid-column: 2/3;
+        grid-gap: 20px;
+}
+.grid-1-3-cols{
+        grid-column: 2/3;
+        grid-gap: 20px;
+}
+
+.grid-content-space{
+}
+
+
+
+.box { background-color: #fff; border-radius: 8px; border: 2px solid #e9ebef; padding: 20px; margin-bottom: 20px; }
+.box-title { margin-bottom: 10px; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #094bde; letter-spacing: 2px; }
+
+.my-hover {
+  cursor: pointer;
+}
+
+
+
+
+
+.background-capacitaciones{
+        background-size: 100% 100%;
+        background-color: #2ECC71;
+}
+
+.ui-dialog-titlebar {
+        background-color: #961853;
+}
+.ui-dialog{
+        background-color: #961853;
+}
+
+.ui-panel-images {
+        width      : 100%;
+        height     : 100%;
+        object-fit : contain;
+      }
+
+      .cuadro-size {
+        width      : 100%;
+        height     : 100%;
+        object-fit : contain;
+      }
+     
+      .cuadro-size-imagen {
+        width      : 100%;
+        height     : 100%;
+        object-fit : contain;
+        
+      }
+
+      .cuadro-size-imagen-popup {
+        width      : 100%;
+        height     : 100%;
+        align-items: flex-start;
+        position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+      }
+
+      .cuadro-size-videos{
+        width      : 100%;
+        height     : 100%;
+        object-fit : contain;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+
+      .cuadro-size-capacitaciones {
+        width      : 90%;
+        height     : 90%;
+        object-fit : contain;
+      }
+
+
+.background-popup-noticias{
+        background-color: #FFFFFF;
+} 
+
+.background-noticias{
+        background-color: #C2185B;
+} 
+
+
+.background-financiamiento{
+        background-color: #662382
+        ;
+} 
+
+.background-videos{
+        background-color: #B2DFDB;
+}
+
+
+
+
+
+
+.borde-noticia { 
+      border-radius: 4px; border: 2px solid rgba(245, 245, 245, 0.7); padding: 20px; margin-bottom: 20px; 
+}
+.borde-noticia-title { margin-bottom: 10px; text-transform: uppercase; font-size: 16px; font-weight: 700; color: #094bde; letter-spacing: 2px; }
+
+
+.transparency-banner{
+     
+        border-radius: 4px;
+        height: 100%;
+        
+        background: rgba(102, 35, 130, 0.7);
+}
+
+.transparency-contacto{
+     
+        border-radius: 2px;
+        height: 100%;
+        
+        background: rgba(46, 134, 193, 0.9);
+}
+
+.transparency-quienes-somos{
+     
+        border-radius: 2px;
+        height: 100%;
+        
+        background: rgba(252, 186, 3, 0.7);
+}
+
+
+.transparency-contacto-line{
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        color: #ffffff;
+}
+
+.transparency-quienes-somos-line{
+        position: absolute;
+        right: 0px;
+        width: 50%;
+        color: #ffffff;
+}
+
+
+.transparency-quienes-somos{
+     
+        border-radius: 2px;
+        height: 100%;
+        background: rgba(30, 132, 73, 0.9);
+}
+
+.transparency-capacitaciones{
+     
+        border-radius: 2px;
+        height: 100%;
+        background: rgba(225, 51, 19, 0.8);
+}
+
+
+.transparency{
+        background-size: 100% 100%;
+        
+        border-radius: 8px;
+        background-image: url(./assets/img/transparency.jpg);
+        background: rgba(245, 245, 245, 0.7)
+}
+
+
+.transparency-2{
+        background-size: 100% 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 30%,rgba(0,0,0,0) 100%);
+        background-image: url(./assets/img/transparency.jpg);
+        background: #ECF0F1 ;
+}
+
+
+.transparency-3{
+        background-size: 100% 100%;
+               
+        background-image: url(./assets/img/transparency.jpg);
+        background: rgba(187, 133, 117,0.9);
+}
+
+
+.background-slide-1{
+        
+        
+}
+
+.banner-inicio{
+       // background-size: 100% 100%;
+        
+     //   background-image: url(./assets/img/PsychologistAndPatientStock1.jpg)
+
+     //   background-image: url(./assets/img/PsychologistAndPatientStock.jpg) no-repeat center;
+     background-image: url(./assets/img/valle-de-la-luna.jpg)  ;
+        background-size: cover;
+        max-width: auto;
+        min-width: auto;
+       max-height: 100%;
+
+}
+
+
+.banner-consulta{
+        // background-size: 100% 100%;
+         
+      //   background-image: url(./assets/img/PsychologistAndPatientStock1.jpg)
+ 
+      //   background-image: url(./assets/img/PsychologistAndPatientStock.jpg) no-repeat center;
+      background-image: url(./assets/img/barreal.jpg)  ;
+         background-size: cover;
+         max-width: 100%;
+         min-width: 50%;
+         height: 70%;
+
+ 
+ }
+/******************************************************************************************/
+
+hr { display: block; height: 1px;
+        border: 0; border-top: 3px solid rgb(240, 227, 227);
+        margin: 1em 0; padding: 0; }
+html, body{overflow-x: hidden;}
+
+.imagen-fit{
+        height: 100%;
+        width: 100%;
+         object-fit: contain;
+}
+
+
+
+
+
+/**** BOTON ELASTICO ****/
+
+
+
+
+
+

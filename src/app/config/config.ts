@@ -1,8 +1,13 @@
 
 
 
-export const URL_SERVICIOS = 'http://agenciacalidadsanjuan.com.ar/api-calidad-sanjuan/public/api/'; 
+export const URL_SERVICIOS = 'https://colegiodepsicologossj.com.ar/api-psicologo/public/api/'; 
+export const URL_ARCHIVO = 'http://colegiodepsicologossj.com.ar/api-psicologo/public/uploads/'; 
+export const URL_ARCHIVO_IMAGEN = 'http://colegiodepsicologossj.com.ar/api-psicologo/public/uploads/imagenes/'; 
+export const URL_ARCHIVO_VIDEO = 'http://colegiodepsicologossj.com.ar/api-psicologo/public/uploads/videos/'; 
+export const URL_APP = 'https://http://localhost/profesionales'; 
 //export const URL_SERVICIOS = 'http://localhost/api-psciologo/public/api/';
+//export const URL_APP = 'https://colegiodepsicologossj.com.ar/profesionales'; 
 //export const URL_SERVICIOS = 'http://localhost/api-psciologo/public/api/';
 //export const URL_SERVICIOS = 'https://colegiodepsicologossj.com.ar/api-psicologo/public/api/'; 
 export const PARAMS = 'json=';

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { URL_ARCHIVO, URL_ARCHIVO_VIDEO, URL_APP } from '../../config/config';
 import {
   trigger,
   state,

@@ -29,5 +29,10 @@ export class NoticiaService {
     
       return this.http.get<any[]>(this.url+'video/financiamiento/lista');
       }
+      getCapacitaciones(){
+    
+        return this.http.get<any[]>(this.url+'video/capacitacion/lista');
+        }
+      
       
 }

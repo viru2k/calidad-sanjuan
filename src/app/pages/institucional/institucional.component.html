@@ -1,0 +1,111 @@
+
+<div class="background-quienes-somos   animated fadeIn slow ">
+    <div class=" row ">
+      
+          
+              <div class=" col-md-12 col-sm-12 col-xs-12  col-sm-ml-2 col-sm-mr-2 animated slideInLeft  ">
+            <div class="row mt-5">
+             
+                <div class="col-md-10 col-sm-12 col-xs-12 m-2   ">
+                    <div class="  blog-container  ">    
+          
+                        <div class="blog-body " >                  
+                            <br>
+                            <div class="blog-title">
+                                <label class="txt-negro-colegio animated fadeIn slow d-flex justify-content-center  label-h5" > Miembros de junta directiva</label>
+
+                            </div>
+                            <hr class="hr-50-alternat">
+                            
+                              <div class="row ">
+                                  <div class="col-md-6  col-lg-6 col-sm-12 animated slideInLeft ">
+                                        <p><span   style="font-size: 24px; color: Dodgergray;"><i class="fas fa-user icon-user-colegio"> </i></span> <span class=" pl-2 font-weight-bold txt-gris-claro-colegio">Presidente: </span>Lic. Gema Galván</p>
+                                        <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span> <span class=" pl-2 font-weight-bold txt-gris-claro-colegio">Vice Presidente:</span> Lic. Bibiana Noe</p>
+                                        <p><span   style="font-size: 24px; color: Dodgergray;"><i class="fas fa-user icon-user-colegio"> </i></span><span class=" pl-2 font-weight-bold txt-gris-claro-colegio">Sec. Gral.:</span> Lic. Natalia Brizuela</p>	                                        
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-sm-12 animated slideInRight">
+                                      <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span><span class="pl-2 font-weight-bold txt-gris-claro-colegio"> Tesorera:</span> Lic. Gabriela Flores</p>
+                                      <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span> <span class="pl-2 font-weight-bold txt-gris-claro-colegio">Pro tesorero:</span> Lic. Gerardo Montenegro</p>
+                                      <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span> <span class="pl-2 font-weight-bold txt-gris-claro-colegio">Sec. Asuntos Profesionales (De licencia):</span> Lic. Hilda Quintero</p>                                      
+                                  </div>
+                              </div>
+                              <hr class="hr-50 mb-3">
+                                <br>
+                                <label class="txt-negro-colegio animated fadeIn slowanimated fadeIn slow  d-flex justify-content-center label-h5" > Vocales:</label>
+                                <hr class="hr-50-alternat">
+                                 <div class="row">
+                                  <div class="col-md-6  col-lg-6 col-sm-12 animated slideInLeft  ">
+                                       
+                                      <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span> Lic. Celia Márquez  <span class="pl-2 font-weight-bold txt-gris-claro-colegio"> (Vocal a cargo de Cientifica)</span> </p>                                        
+                                  </div>
+                                  <div class="col-md-6 col-lg-6 col-sm-12 animated slideInRight">
+                                      
+                                      <p><span   style="font-size: 24px; color: Dodgerpink;"><i class="fas fa-user icon-user-colegio"> </i></span> Lic. Mabel Mengual <span class="pl-2 font-weight-bold txt-gris-claro-colegio"> (Vocal a cargo de de Social)</span> </p>                      
+                                  </div>
+                              </div>
+                              <hr class="hr-50 ">
+                        <br>
+                             
+                  </div>
+              </div>
+                  
+                </div>
+                <div class="col-md-1 col-sm-0 col-xs-0"></div>
+          </div>
+          <hr class="d-sm-block d-none hr-50">
+         
+  </div>
+  <div class=" col-md-3 col-sm-0 col-xs-0"></div>
+  <div class=" col-md-3 col-sm-0 col-xs-0">   </div>
+
+  </div>
+  
+  
+<div class="background-noticias transparency-2 cuadro-size ">
+        <hr class="d-sm-block d-none hr-50">
+    <div class="mt-5"><h3><p class="text-center txt-azul-oscuro-colegio">NORMATIVAS</p></h3></div>
+    <app-loading *ngIf="loading" class="text-center txt-noticia-inicio"></app-loading>
+  
+    <p-scrollPanel  [style]="{width: '99%', height: '800px'}">
+      
+      <div  *ngIf="errornoticia" class=" row  row mt-5">
+          <div class="col-5"></div>
+          <div class="col-2" *ngIf="errornoticia">
+              <div id="container center"><b><h6 class="text-white">A ocurrido un error</h6></b></div>
+              <div id="container">
+                  <button class="learn-more " (click)="loadListNoticias()"> Volver a cargar</button>    
+                </div>                  
+          </div>
+          <div class="col-5"></div>
+      </div>
+  
+  
+    <div  *ngFor="let elemento of elementos" class=" row ">
+      
+        <div class=" col-xs-0 col-sm-0 col-md-3"></div>
+       
+              <div *ngIf="elemento.pagina === 'INSTITUCIONAL'"  class="  xs-12 col-sm-12 col-md-6 mt-4 m-1 border-wrapper"> 
+          <div class="row">
+            <div *ngIf="elemento.pagina === 'INSTITUCIONAL'" class="col-md-12 xs-12 col-sm-12">
+                
+                <h3 class="txt-gris-oscuro-colegio">{{elemento.titulo}}</h3>
+                <hr class="hr-50 mb-5">
+                <img *ngIf="elemento.tiene_imagen === 'SI'" src="{{elemento.imagen}}" alt="No se encuentra la imagen" class=" img-noticia imagen-fit mb-2 rounded  d-block ">
+                <h6 class="txt-gris-oscuro-colegio"><p class="text-justify" [innerHTML]="elemento.descripcion"></p></h6>              
+                <a *ngIf="elemento.tiene_enlace === 'SI'" class="link opacity" mp-mode="dftl"  href="{{elemento.enlace}}" target="_blank" >Consultar</a>
+            </div>
+            
+            <div class="col-xs-0 col-sm-0 col-md-3">
+                
+            </div>
+          </div>
+          
+        </div>
+              <div class="col-2 xs-0 col-sm-0  col-md-3"></div>
+  
+  </div>
+  
+  </p-scrollPanel>
+  </div>
+  </div>
+  

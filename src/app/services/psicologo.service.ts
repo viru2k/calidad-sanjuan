@@ -25,7 +25,17 @@ export class PsicologoService {
       }
     
       getLiquidacionByPsicologo(id:string){
-        return this.http.get<any[]>(this.url+"/liquidacion/by/psicologo?mat_matricula="+id);
+        return this.http.get<any[]>(URL_SERVICIOS+"/liquidacion/by/psicologo?mat_matricula="+id);
         }
+
+    
+
+       getinformacionPrivado(){
+        return this.http.get<any[]>(URL_SERVICIOS+"/informacion/rpivada");
+        }
+
+        getinformacionPublico(){
+      return this.http.get<any[]>(URL_SERVICIOS+"informacion/publica");
+      }
       
 }

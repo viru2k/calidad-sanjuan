@@ -1,35 +1,36 @@
 
 <nav class="navbar navbar-expand-lg navbar-default  container-fluid-nav fixed-top animated slideInDown">
-    <a class="navbar-brand" routerLink="inicio"><img src="assets/img/logos-agencia-gobierno.png" height="50" alt=""></a>
+    <a class="navbar-brand  text-white img-responsive " routerLink="inicio"><img src="assets/img/psicologos-logo.png " style="display: inline-block; height: 35px; " ></a>
   
 
 
-    <button class="navbar-toggler my-hover  navbar-toggler-right  " type="button" data-toggle="collapse"
+    <button class="navbar-toggler my-hover  navbar-toggler-left  navbar-button  " type="button" data-toggle="collapse"
             (click)="toggleNavbar()">
-            <i class="fa fa-navicon"></i>
+            <i class="fa fa-navicon text-white"></i>
     </button>
   
   
     <div class="collapse navbar-collapse animated fadeIn slow  container-fluid-nav text-center "
          [ngClass]="{ 'show': navbarOpen }">
       <ul class="nav navbar-nav slideInDown ">
-        <li class="nav-item">
-          <a class="nav-link btn-menu-uno hvr-shrink" routerLink="inicio" (click)="toggleNavbar()" href="#">INICIO</a>
-        </li>
-  
-        <li class="nav-item">
-            <a class="nav-link btn-menu-uno hvr-shrink" routerLink="institucional/quienessomos" (click)="toggleNavbar()" href="#">QUIENES SOMOS</a>
-        </li>
           
-        <li class="nav-item">
-            <a class="nav-link btn-menu-uno hvr-shrink" routerLink="institucional/financiamiento" (click)="toggleNavbar()" href="#">FINANCIAMIENTO</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link btn-menu-uno hvr-shrink" routerLink="institucional/capacitaciones" (click)="toggleNavbar()" href="#">CAPACITACIONES</a>
-        </li> 
-        <li class="nav-item">
-            <a class="nav-link btn-menu-uno hvr-shrink" routerLink="institucional/contacto" (click)="toggleNavbar()" href="#">CONTACTO</a>
-        </li> 
+            <a class="m-1 d-flex align-items-center  d-fhex justify-content-center my-hover nav-link  hvr-shrink navbar-font-mobile navbar-background-mobile texto-monserrat d-md-none d-xl-none d-lg-none" routerLink="inicio" (click)="toggleNavbar()" href="#"><label class="font-size-h6 ">INICIO</label></a>     
+            <a class="m-1 d-flex align-items-center  d-fhex justify-content-center my-hover nav-link  hvr-shrink navbar-font-mobile navbar-background-mobile texto-monserrat d-md-none d-xl-none d-lg-none" routerLink="institucional" (click)="toggleNavbar()" href="#"><label class="font-size-h6 ">INSTITUCIONAL</label></a>
+            <a class="m-1 d-flex align-items-center  d-fhex justify-content-center my-hover nav-link  hvr-shrink navbar-font-mobile navbar-background-mobile texto-monserrat d-md-none d-xl-none d-lg-none" routerLink="psicologo/consulta" (click)="toggleNavbar()" href="#"><label class="font-size-h6 ">BUSCAR UN PROFRESIONAL</label></a>
+            <a class="m-1 d-flex align-items-center  d-fhex justify-content-center my-hover nav-link  hvr-shrink navbar-font-mobile navbar-background-mobile texto-monserrat d-md-none d-xl-none d-lg-none" routerLink="institucional/contacto" (click)="toggleNavbar()" href="#"><label class="font-size-h6 ">CONTACTO</label></a>
+            <a class="m-1 d-flex align-items-center  d-fhex justify-content-center my-hover nav-link  hvr-shrink navbar-font-mobile navbar-background-mobile navbar-font-mobile-warning texto-monserrat d-md-none d-xl-none d-lg-none"  target="_blank" href="https://colegiodepsicologossj.com.ar/gestion" (click)="toggleNavbar()" ><label class="font-size-h6 ">SOY PSICOLOGO</label></a>        
+        
+          
+            
+
+            <a class="my-hover nav-link navbar-font text-white hvr-shrink texto-monserrat d-sm-none d-md-none d-md-block d-none d-md-block" routerLink="inicio" (click)="toggleNavbar()" href="#"><label class="font-size-h6 my-hover">INICIO</label></a>     
+            <a class="my-hover nav-link navbar-font text-white hvr-shrink texto-monserrat d-sm-none d-md-none d-md-block d-none d-md-block" routerLink="institucional" (click)="toggleNavbar()" href="#"><label class="font-size-h6 my-hover">INSTITUCIONAL</label></a>
+            <a class="my-hover nav-link navbar-font text-white hvr-shrink texto-monserrat d-sm-none d-md-none d-md-block d-none d-md-block" routerLink="psicologo/consulta" (click)="toggleNavbar()" href="#"><label class="font-size-h6 my-hover">BUSCAR UN PROFRESIONAL</label></a>
+            <a class="my-hover nav-link navbar-font text-white hvr-shrink texto-monserrat d-sm-none d-md-none d-md-block d-none d-md-block" routerLink="institucional/contacto" (click)="toggleNavbar()" href="#"><label class="font-size-h6 my-hover">CONTACTO</label></a>
+            <a class="my-hover nav-link navbar-font text-danger hvr-shrink texto-monserrat d-sm-none d-md-none d-md-block d-none d-md-block"  target="_blank" href="https://colegiodepsicologossj.com.ar/gestion" (click)="toggleNavbar()" ><label class="font-size-h6 my-hover">SOY PSICOLOGO</label></a>                   
+
+
+        
       </ul>
     </div>
   </nav>

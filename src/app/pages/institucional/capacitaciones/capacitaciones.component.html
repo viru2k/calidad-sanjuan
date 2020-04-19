@@ -1,25 +1,35 @@
 <div class="ui-panel-images background-capacitaciones    cuadro-size  animated fadeIn">
   <div class=" cuadro-size transparency-capacitaciones pb-5">
  
- 
+      <div  *ngIf="errornoticia" class=" row mt-5">
+          <div class="col-4"></div>
+          <div class="col-4">
+              <div><b><h6 class="text-white">A ocurrido un error</h6></b></div>
+              <div><button class="btn btn-info brn-lg btn-block" (click)="loadListCapacitaciones()"> Volver a cargar</button></div>
+          </div>
+          <div class="col-4"></div>
+           
+          </div>
   <div class="mt-5"></div>
-  <div class=" row ">
+  <p-scrollPanel  [style]="{width: '99%', height: '500px'}">
+    
+  
+      <div  *ngFor="let elemento of elementos">
+  <div class=" row "  *ngIf="elemento.alineacion === 'DER'">
     
     	<div class="col-md-2 xs-0 col-sm-0"></div>
 			<div class="col-md-8 xs-12 col-sm-12  mt-5  border-wrapper animated fadeIn slow">
         <div class="row">
             <div class="col-md-5">
-                <img src="assets/img/tmp/finanzas para emprendedor julio-02.jpg" alt="Smiley face" class="cuadro-size-capacitaciones">
+                <img src="{{elemento.imagen}}" alt="Smiley face" class="cuadro-size-capacitaciones">
             </div>
 
           <div class="col-md-6">
-              <b><h5 class="txt-noticia-inicio font-weight-bold ">TALLER FINANZAS PARA EMPRENDEDORES</h5></b>
+              <b><h5 class="txt-noticia-inicio font-weight-bold ">{{elemento.titulo}}</h5></b>
               
-              <h6 class="txt-noticia-inicio"><p class="text-justify">Sacate las dudas sobre tu monotributo, lo que necesitas 
-                saber para contratar a un empleado y como constituir 
-                tu fondo de emergencia.</p></h6>
-
-                <a class="txt-link-capacitaciones " target="_blank" href="http://bit.ly/talleresjulioacsj">Link de inscripción</a>
+              <h6 class="txt-noticia-inicio"><p class="text-justify">{{elemento.descripcion}}</p></h6>
+              
+                <a *ngIf="elemento.tiene_enlace" class="txt-link-capacitaciones " target="_blank" href="{{elemento.enlace}}">Link de inscripción</a>
           </div>
 
           <div class="col-md-1"></div>
@@ -31,7 +41,7 @@
 
 </div>
 
-<div class=" row ">
+<div class=" row " *ngIf="elemento.alineacion === 'IZQ'">
     
     <div class="col-md-2 xs-0 col-sm-0"></div>
     <div class="col-md-8 xs-12 col-sm-12  mt-5  border-wrapper animated fadeIn slow">
@@ -39,18 +49,14 @@
          
           <div class="col-md-1"></div>
         <div class="col-md-6">
-            <h5 class="txt-noticia-inicio font-weight-bold">MARKETING DIGITALMARKETING DIGITAL</h5>
+            <h5 class="txt-noticia-inicio font-weight-bold">{{elemento.titulo}}</h5>
             
-            <h6 class="txt-noticia-inicio"><p class="text-justify">ABC del Marketing Digital. Vení a aprender cómo vender 
-                a través de las redes sociales y sacate todas las dudas.
-                Viernes 10 de mayo 
-                10hs 
-                Agencia Calidad San Juan (25 de Mayo este 577) </p></h6>
+            <h6 class="txt-noticia-inicio"><p class="text-justify">{{elemento.descripcion}}</p></h6>
 
-              <a class="txt-link-capacitaciones" target="_blank" href="http://bit.ly/talleresjulioacsj">Link de inscripción</a>
+            <a *ngIf="elemento.tiene_enlace" class="txt-link-capacitaciones " target="_blank" href="{{elemento.enlace}}">Link de inscripción</a>
         </div>
         <div class="col-md-5">
-            <img src="assets/img/tmp/marketing digital julio-02.jpg" alt="Smiley face" class="cuadro-size-capacitaciones">
+            <img src="{{elemento.imagen}}" alt="Smiley face" class="cuadro-size-capacitaciones">
         </div>
      
        
@@ -59,7 +65,8 @@
     </div>
     <div class="col-2 xs-0 col-sm-0  "></div>
 
-</div>
-
+</div> 
+</div> 
+</p-scrollPanel>
 </div>
 </div>

@@ -1,0 +1,58 @@
+
+
+<div class="">
+  <div >
+    <app-loading *ngIf="loading" class="d-flex justify-content-center"> </app-loading> 
+   
+</div> 
+<div class="banner-inicio pb-5 cuadro-size animated fadeIn row pt-5 p-4">
+<div class=" ">
+    <div class="">
+      
+        <div class="ml-5 mt-5">
+                <label class=" pr-4">Buscar obra social : </label>
+              <!--   <mat-form-field class="">
+                        <mat-label></mat-label>
+                        <mat-select [(ngModel)]="element" name="elementos">
+                          <mat-option *ngFor="let elem of elementos" [value]="elem.os_nombre">
+                            {{elem.os_nombre}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field> -->
+                      
+              <p-dropdown class="txt-dropdown" [options]="elementos" [(ngModel)]="element" placeholder="Seleccione una obra social" optionLabel="os_nombre" [showClear]="true"></p-dropdown>
+              <button   class="btn btn-info txt-azul-oscuro-colegio" type="submit" (click)="buscar()" >Buscar</button>
+        </div>
+    </div>        
+   
+    
+
+</div>
+<div>
+    
+
+</div>
+</div>
+
+<div class="  pt-5 p-4">
+        <div class="">
+           
+                  <!--   <mat-form-field>
+                            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar...">
+                          </mat-form-field>
+                           -->
+<table mat-table #table [dataSource]="elementosPadron"  multiTemplateDataRows  class="mat-elevation-z8 col-12 menu-font ">
+        <ng-container matColumnDef="{{column.id}}" *ngFor="let column of columnNames">
+          <mat-header-cell *matHeaderCellDef > {{column.value}} </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element[column.id]}} </mat-cell>
+        </ng-container>
+    
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row> 
+      </table>
+            </div>
+        
+        </div>              
+
+
+      </div>

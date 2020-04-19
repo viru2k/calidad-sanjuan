@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FacebookModule } from 'ngx-facebook';
 import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
+import { CdkTableModule } from '@angular/cdk/table';
+import {MatInputModule, MatTableModule, MatToolbarModule, MatCardModule, MatProgressSpinnerModule, MatMenuModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatSelectModule, MatSortModule } from '@angular/material';
+import {DropdownModule} from 'primeng/dropdown';
 import {
   trigger,
   state,
@@ -24,8 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { InicioComponent } from './pages/inicio/inicio.component';
-import { QuienesSomosComponent } from './pages/institucional/quienes-somos/quienes-somos.component';
-import { CreditosComponent } from './pages/institucional/creditos/creditos.component';
+
 import { CapacitacionesComponent } from './pages/institucional/capacitaciones/capacitaciones.component';
 import { ROUTES } from './app.routes';
 
@@ -43,6 +45,10 @@ import {DialogModule} from 'primeng/dialog';
 import {DynamicDialogModule} from 'primeng/dynamicdialog';
 
 import { PopupNoticiaComponent } from './shared/compents/popups/popup-noticia/popup-noticia.component';
+import { ConsultarComponent } from './pages/psicologo/consultar/consultar.component';
+import { InstitucionalComponent } from './pages/institucional/institucional.component';
+
+registerLocaleData(localeEsAR, 'es-Ar');
 
 
 @NgModule({
@@ -51,15 +57,29 @@ import { PopupNoticiaComponent } from './shared/compents/popups/popup-noticia/po
     NavbarComponent,
   
     InicioComponent,
-    QuienesSomosComponent,
-    CreditosComponent,
+
     CapacitacionesComponent,
     FinanciamientoComponent,
     ContactoComponent,
     LoadingComponent,
-    PopupNoticiaComponent
+    PopupNoticiaComponent,
+    ConsultarComponent,
+    InstitucionalComponent
   ],
   imports: [
+    DropdownModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatMenuModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSortModule,
+    CdkTableModule ,
+    MatTableModule,
     DynamicDialogModule,
     DialogModule,
     ScrollPanelModule,
