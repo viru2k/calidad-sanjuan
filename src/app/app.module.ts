@@ -37,7 +37,6 @@ import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { AutofocusModule } from 'angular-autofocus-fix'; 
 import { JwtInterceptor } from './helpers/jwt.interceptor';
 import { ErrorInterceptor } from './helpers/error.interceptor';
-import { FinanciamientoComponent } from './pageses/institucional/financiamiento/financiamiento.component';
 import { ContactoComponent } from './pageses/institucional/contacto/contacto.component';
 import { LoadingComponent } from './shared/loading/loading.component';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
@@ -47,6 +46,8 @@ import {DynamicDialogModule} from 'primeng/dynamicdialog';
 import { PopupNoticiaComponent } from './shared/compents/popups/popup-noticia/popup-noticia.component';
 import { ConsultarComponent } from './pages/psicologo/consultar/consultar.component';
 import { InstitucionalComponent } from './pages/institucional/institucional.component';
+import { PresidenciaComponent } from './pages/presidencia/presidencia.component';
+import { SecretariaGeneralComponent } from './pages/secretaria-general/secretaria-general.component';
 
 registerLocaleData(localeEsAR, 'es-Ar');
 
@@ -55,16 +56,15 @@ registerLocaleData(localeEsAR, 'es-Ar');
   declarations: [
     AppComponent,
     NavbarComponent,
-  
     InicioComponent,
-
     CapacitacionesComponent,
-    FinanciamientoComponent,
     ContactoComponent,
     LoadingComponent,
     PopupNoticiaComponent,
     ConsultarComponent,
-    InstitucionalComponent
+    InstitucionalComponent,
+    PresidenciaComponent,
+    SecretariaGeneralComponent
   ],
   imports: [
     DropdownModule,
